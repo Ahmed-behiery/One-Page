@@ -1,0 +1,728 @@
+// variable
+
+$colAghdr: #27ae60;
+$colOra: #f1c40f;
+$foSize: 16px;
+
+
+
+// variable
+.upper{
+  background: $colAghdr;
+  color: white;
+  font-size: $foSize + 4;
+}
+.upper .one i{
+  margin-right: 4px;
+}
+.upper .one i.nd{
+  margin-left: 22px;
+}
+
+.upper .one{
+text-align: left;
+margin: 15px 0px;
+}
+
+.upper .two{
+text-align: right;
+margin: 15px 0px;
+
+}
+@media (max-width:767px) {
+  .upper .one,
+  .upper .two
+  {
+    text-align: center;
+  }
+}
+
+.upper button{
+  margin-left: 12px;
+  background-color: transparent;
+  padding: 5px 20px;
+  color: white;
+  border: 1px solid $colOra;
+  border-radius: 5px;
+}
+
+/* navbar */
+.navbar{
+  padding: 10px 0px;
+}
+.navbar .navbar-brand {
+  color: $colAghdr;
+  font-size: $foSize + 24;
+  font-weight: 600;
+}
+.navbar .navbar-brand span {
+  color: $colOra;
+  font-weight: 450;
+}
+.navbar-light .navbar-nav .nav-link{
+  @extend %uppper;
+  color: $colAghdr;
+  font-size: $foSize + 4;
+  margin-right: 5px;
+  font-weight: 500;
+}
+.navbar-light .navbar-nav .active>.nav-link,
+ .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link.show,
+   .navbar-light .navbar-nav .show>.nav-link{
+     color: $colOra;
+   }
+/* navbar */
+
+
+/* slider */
+.slider .carousel-inner .overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 2;
+}
+.slider .carousel-inner h1{
+  font-size: $foSize + 49;
+  color: white;
+  position: absolute;
+  z-index: 3;
+  max-width: 800px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+  line-height: 1.5;
+}
+@media (max-width:992px) {
+.slider .carousel-inner h1  {
+    font-size: $foSize + 39;
+  }
+}
+@media (max-width:576px) {
+.slider .carousel-inner h1  {
+    font-size: $foSize + 22;
+  }
+}
+
+
+.slider .carousel-inner h1 span{
+background-color: $colOra;
+padding: 4px;
+border-radius: 3px;
+
+}
+.slider .carousel-item {
+  background-size: cover;
+}
+
+ .slider .one{
+   background-image: url("../img/slider.jpg");
+ }
+ .slider .two{
+   background-image: url("../img/slider1.jpg");
+ }
+ .slider .three{
+   background-image: url("../img/slider2.jpg");
+ }
+
+.carousel-indicators li{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+/* slider */
+
+
+/* feature */
+  .feature{
+    padding: 90px 0px 60px;;
+  }
+  .feature .container i{
+    color: white;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background: $colOra;
+    margin-bottom: 20px;
+  }
+  .feature .container p{
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+/* feature */
+
+/* overview */
+  .overview{
+    padding: 90px 0px;
+    background: #F1F4F9;
+  }
+.overview h2{
+  @extend %uppper;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: $foSize + 34;
+}
+@media (max-width: 767px)  {
+  .overview h2{
+    font-size: $foSize + 34;
+  }
+}
+.overview p{
+  margin-bottom: 50px;
+}
+.overview span{
+  @extend %uppper;
+  letter-spacing: 8px;
+  display: block;
+  margin-bottom: 25px;
+  font-weight: 620;
+}
+.overview button{
+  @extend %uppper;
+  padding: 5px 35px;
+}
+/* overview */
+/* work */
+.work{
+  padding: 90px 0px;
+}
+.work h2{
+font-weight: 600;
+margin-bottom: 20px;
+font-size: $foSize + 34;
+}
+@media (max-width: 767px)  {
+.overview h2{
+  font-size: $foSize + 29;
+}
+}
+.work p{
+margin-bottom: 50px;
+}
+.work ul li{
+  color : $colAghdr;
+  border: 2px solid $colAghdr;
+  margin-left: 20px;
+  transition: all 0.4s ease-in-out;
+  padding: 5px 12px;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px)  {
+  .work ul li{
+    width: 40%;
+  }
+}
+
+.work ul li.active,
+.work ul li:hover{
+  color : #fff;
+  border: 2px solid $colOra;
+  background: $colOra;
+  cursor: pointer;
+}
+.work .shuffle{
+  padding: 0px;
+}
+.work .boximg .row{
+  margin: 0px;
+}
+.work .boximg .col-md{
+  padding: 0px;
+  margin: 0px;
+}
+.work .row .col-md img{
+  max-width:355px;
+  max-height: 300px;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* work */
+
+/* posts */
+.latest{
+  padding: 90px 0px;
+  background: #FEFCFE;
+}
+.latest h2{
+font-weight: 600;
+margin-bottom: 20px;
+font-size: $foSize + 34;
+}
+@media (max-width: 767px)  {
+.latest h2{
+  font-size: $foSize + 29;
+}
+}
+.latest .card{
+  margin-bottom: 20px;
+}
+.latest p{
+margin-bottom: 50px;
+}
+.latest .row .card h4{
+  color: $colAghdr;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.latest .row .card h6{
+  color: gray;
+  text-align: left;
+
+}
+.latest .row .card p{
+  margin-top: 30px;
+  font-size: $foSize + 2;
+}
+.latest .row .card p a{
+  color: $colOra;
+  font-weight: 500;
+}
+/* testim */
+.testim{
+  background: url("../img/testim.jpg");
+  background-size: cover;
+  width: 100%;
+  min-height: 800px;
+  position: relative;
+}
+.testim .overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 2;
+
+}
+.testim .container h5{
+  color: white;
+  position: relative;
+  z-index: 999;
+}
+.testim .container .slide{
+  width: 100%;
+  height: 100%;
+}
+.testim .container ol{
+  position: absolute;
+  bottom: -150px;
+}
+@media (max-width: 767px)  {
+.testim .container ol{
+  bottom: -120px;
+}
+}
+@media (max-width: 576px)  {
+.testim .container ol{
+  bottom: -180px;
+}
+}
+
+.testim .container ol li.active{
+  background-color: $colOra;
+}
+.testim .container{
+  position: relative;
+  z-index: 9999;
+}
+
+.testim .container img{
+  border-radius: 50%;
+  margin-top: 150px;
+
+}
+.testim .container .carousel-item h5{
+  @extend %uppper;
+  font-size: $foSize + 19;
+}
+.testim .container .carousel-item span{
+  color: white;
+  font-size: $foSize;
+  font-weight: 500;
+}
+.testim .container .carousel-item p{
+  font-size: $foSize + 6;
+  color: white;
+  margin-top: 15px;
+  position: relative;
+  z-index: 99999;
+}
+.testim .carousel-control-prev,
+.testim .carousel-control-next{
+  position: absolute;
+  z-index: 5555;
+}
+
+/* testim */
+
+/* price */
+.price{
+  padding: 90px 0px;
+  background: #F8F6F8;
+  .card{
+    margin-bottom: 20px;
+    background: #FEFCFE;
+   h3{
+    font-size: $foSize + 36;
+    background: #F7F6F7;
+    padding: 10px;
+    margin-top: 40px;
+   span{
+     @extend %uppper;
+    font-size: 16px;
+    display: inline;
+    letter-spacing: 0px;
+      }
+    }
+  }
+   .fir, .thi{
+    margin-top: 15px;
+  }
+ .card-body{
+    padding: 30px 0px;
+  }
+}
+.price h2{
+font-weight: 600;
+margin-bottom: 20px;
+font-size: 50px;
+}
+@media (max-width: 767px)  {
+.price h2{
+  font-size: $foSize + 29;
+}
+}
+
+.price .card h3.cen{
+  color: white;
+  background-color: $colOra;
+}
+
+.price .row .card h4{
+  color: $colAghdr;
+  margin-bottom: 20px;
+}
+
+.price .row .card h6{
+  color: gray;
+
+}
+.price .row .card p{
+  margin-top: 30px;
+  font-size: $foSize + 2;
+}
+.price .row .card p a{
+  color: red;
+  font-weight: 500;
+}
+.price .card ul{
+  margin-bottom: 30px;
+  background: #FEFCFE;
+}
+.price .card ul li{
+  background: #FEFCFE;
+  border-bottom: none;
+  color: gray;
+}
+.price .card a{
+  @extend %uppper;
+  letter-spacing: 5px;
+  padding: 10px 30px;
+  background-color: $colOra;
+  border: 1px solid $colOra;
+}
+.price .card a.acha{
+  background-color: $colAghdr;
+  border: 1px solid $colAghdr;
+
+}
+.choose .col-md-6,
+.choose .col-sm-12{
+  padding: 0px;
+  margin: 0px;
+}
+.choose .twoo{
+  background: $colAghdr;
+  color: white;
+  padding: 65px 40px 30px;
+}
+
+.choose .twoo h2{
+  @extend %uppper;
+  font-size: 40px;
+  margin-bottom: 35px;
+  letter-spacing: 5px;
+}
+.choose .twoo p{
+  margin-bottom: 30px;
+}
+.choose .twoo button{
+  color: white;
+  font-size: 22px;
+  background: $colOra;
+  border: 1px solid $colOra;
+  padding: 5px 30px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+@media (max-width: 767px)  {
+.choose  {
+  text-align: center;
+}
+}
+/* choose */
+
+/* statistic */
+.statistic{
+  padding: 120px 0px 90px;;
+  text-align: center;
+   i{
+    color: $colAghdr;
+    margin-bottom: 15px;
+  }
+  h2{
+    color: $colAghdr;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+   p{
+     @extend %uppper;
+    color: $colOra;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 50px;
+
+  }
+
+}
+
+
+
+/* statistic */
+
+.contact{
+  padding: 70px 0px;
+  background: $colOra;
+  color: white;
+}
+.contact p{
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+.contact button{
+  @extend %uppper;
+  padding: 10px 30px;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 4px;
+  background: transparent;
+  border: 2px solid white;
+}
+@media (max-width: 767px)  {
+.contact button  {
+  padding: 7px 8px;
+  font-size: 14px;
+  margin-top: 18px;
+}
+.contact p{
+  font-size: 18px;
+  margin-top: 20px;
+
+}
+}
+/* stat */
+
+/* footer */
+  .footer{
+    background: #F8F6F8;
+    padding: 80px 50px;
+  }
+  .footer h2 {
+    color: $colAghdr;
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 25px;
+  }
+  .footer h2 span {
+    color: $colOra;
+    font-weight: 450;
+  }
+  .footer .foone p{
+    line-height: 1.7;
+  }
+.footer .foone a{
+  font-size: 20px;
+  font-weight: bold;
+  color: $colAghdr;
+  margin-bottom: 50px;
+}
+.footer .foone a:hover{
+  color: $colOra;
+  text-decoration: none;
+
+}
+.footer .foone a:hover i{
+  color: $colAghdr;
+}
+.footer .foone a i{
+  font-size: 16px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border: 2px solid $colAghdr;
+  border-radius: 50%;
+}
+.footer .fotwo h3{
+  margin-bottom: 55px;
+  margin-top: 10px;
+  color: $colAghdr;
+}
+.footer .list-unstyled{
+padding-left: 20px;
+margin-right: 10px;
+}
+.footer .fotwo ul li{
+  margin-bottom: 20px;
+}
+.footer .fotwo ul i{
+  margin-right: 5px;
+
+}
+.footer .fotwo ul li a{
+  color: $colAghdr;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer .fotwo ul li a:hover{
+  color: $colOra;
+  text-decoration: none;
+}
+.footer .fothree h3{
+  margin-bottom: 55px;
+  margin-top: 10px;
+  color: $colAghdr;
+}
+.footer .fothree p{
+  font-size: 20px;
+  margin-bottom: 50px;
+  color: gray;
+}
+.footer .fothree p a{
+  color: $colAghdr;
+}
+.footer .fothree  a:hover{
+  color: $colAghdr;
+  text-decoration: none;
+}
+
+/* footer */
+
+/* copy */
+.copy{
+  background: #F8F6F8;
+  padding: 30px 70px 30px;
+  border-top: 1px solid gray;
+}
+.copy p{
+  margin-bottom: 20px;
+  display: inline-block;
+  font-size: 20px;
+  /* line-height: 52px; */
+}
+.copy .coppy{
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.copy i{
+  text-align: right;
+margin-right: 40px;
+font-size: 24px;
+color: lightgray;
+transition: all 0.3s ease-in-out;
+
+}
+.copy i.fa-google:hover{
+  color: #4285f4;
+  cursor: pointer;
+}
+.copy i.fa-twitter:hover{
+  color: #1da1f2;
+  cursor: pointer;
+}
+.copy i.fa-instagram:hover{
+  color: #fd1d1d;
+  cursor: pointer;
+}
+.copy i.fa-cloud:hover{
+  color: #f38020;
+  cursor: pointer;
+}
+.copy i.fa-facebook-f:hover{
+  color: #3b5998;
+  cursor: pointer;
+}
+
+
+
+// extent classes
+%uppper{
+  text-transform: uppercase;
+}
+
+
+// extend
+%grid{
+  float: left;
+  background: gray;
+  text-align: center;
+  font-weight: 700;
+  border: 1px solid black;
+}
+@for $i from 1 through 12{
+  .class#{$i}{
+    width: (100% / (12 / $i));
+    @extend %grid;
+  }
+}
+@each $social, $col, $fonS, $colH, $FonH in
+(facebook, red, 15px, black, 40px),
+(codepen, red, 15px, black, 40px),
+(insta, red, 15px, black, 40px),
+(twi, red, 15px, black, 40px),
+(snap, red, 15px, black, 40px),
+(linkedIn, red, 15px, black, 40px),
+(ask, red, 15px, black, 40px){
+  .#{$social}{
+    background: url("#{$social}.png");
+    font-size: $fonS;
+    color: $col;
+    &:hover{
+      color: $colH;
+      font-size: $FonH;
+    }
+  }
+}
+$Elements: (divv: red, pp: green, spann: yellow, asidee: purple, buttonn: brown);
+@each $item, $col in $Elements{
+  .#{$item}{
+    color: $col;
+  }
+}
+$x: 12;
+@while $x >= 0{
+  .col#{$x}{
+    width:  (100%/(12/$x))
+  }
+  $x: $x - 1;
+}
